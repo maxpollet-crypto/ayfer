@@ -1,0 +1,1096 @@
+<section id="ayfer-site">
+ <style>
+   html,body{margin:0!important;padding:0!important;overflow-x:hidden!important}
+   body::before,body::after{display:none!important;content:none!important}
+
+
+   #siteWrapper,#site-wrapper,#page,#page-wrapper,.Main,main,main#page,.sqs-layout,.sqs-row,.sqs-col-12,.sqs-block,.sqs-block-content,.sqs-block-code,.sqs-block-code .sqs-block-content,.page-section,section[data-section-id],.Index-page,.Index-page-content,.content-wrapper,.site-content,#collection-root{
+     margin:0!important;padding:0!important;min-height:auto!important;
+   }
+
+
+   .page-section:first-child,section[data-section-id]:first-child,.Index-page:first-child{margin-top:0!important;padding-top:0!important}
+   .sqs-block{margin:0!important}
+   .sqs-block-content{margin:0!important;padding:0!important}
+
+
+   :root{
+     --cream:#fbf7ef;
+     --sand:#f3eadf;
+     --sage:#dfe4d6;
+     --deep:#14231d;
+     --text:#1d251f;
+     --muted:#6c7068;
+     --gold:#c89b5c;
+     --line:rgba(30,35,30,.14);
+     --hero-url:url("https://images.squarespace-cdn.com/content/699bedeaf453885665c4eaa3/c6b9e365-25ff-4b59-bea9-d63b2dc71397/ayfer.jpeg?content-type=image%2Fjpeg");
+     --about-url:url("https://images.squarespace-cdn.com/content/699bedeaf453885665c4eaa3/01378c75-e7c5-4f27-a74c-b5650813dabb/ayfer1.jpeg?content-type=image%2Fjpeg");
+     --footer:url("https://images.squarespace-cdn.com/content/699bedeaf453885665c4eaa3/158022d9-a300-4a7a-8a9e-ff5b57ac0899/Ayfer+2.jpeg?content-type=image%2Fjpeg");
+   }
+
+
+   #ayfer-site{
+     display:block!important;
+     margin:0!important;
+     padding:0!important;
+     position:relative;
+     top:-40px!important;
+     font-family:Inter,Arial,sans-serif;
+     color:var(--text);
+     background:var(--cream);
+     overflow:hidden;
+   }
+
+
+   #ayfer-site *{box-sizing:border-box}
+   .serif{font-family:Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:-.045em}
+   .eyebrow{font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:800;color:var(--gold);margin-bottom:22px}
+
+
+   .hero{
+     min-height:800px;
+     position:relative;
+     color:white;
+     padding:64px 6vw 86px;
+     background-image:
+       linear-gradient(90deg,rgba(8,17,16,.82) 0%,rgba(8,17,16,.62) 34%,rgba(8,17,16,.08) 62%),
+       var(--hero-url);
+     background-repeat:no-repeat,no-repeat;
+     background-size:cover,cover;
+     background-position:center center,center 5%;
+   }
+
+
+   .nav{
+     display:flex;
+     align-items:flex-start;
+     justify-content:space-between;
+     gap:30px;
+     position:fixed;
+     top:0;
+     left:0;
+     right:0;
+     z-index:99999;
+     padding:24px 6vw 20px;
+     background:rgba(255,255,255,.18);
+     backdrop-filter:blur(18px);
+     -webkit-backdrop-filter:blur(18px);
+     box-shadow:0 16px 48px rgba(0,0,0,.12);
+   }
+
+
+   .brand{
+     font-family:Georgia,serif;
+     font-size:39px;
+     letter-spacing:.12em;
+     line-height:.88;
+     color:rgb(0, 0, 0);
+   }
+
+
+   .brand span{
+     display:block;
+     margin-top:10px;
+     font-family:Inter,Arial,sans-serif;
+     font-size:11px;
+     letter-spacing:.17em;
+     line-height:1.35;
+     font-weight:800;
+   }
+
+
+   .links{
+     display:flex;
+     gap:34px;
+     align-items:center;
+     font-size:12px;
+     letter-spacing:.12em;
+     font-weight:800;
+     text-transform:uppercase;
+   }
+
+
+   .links a{color:rgb(0, 0, 0);text-decoration:none}
+   .links a:hover{opacity:.72}
+
+
+   .btn{
+     display:inline-flex;
+     align-items:center;
+     justify-content:center;
+     border:1px solid rgba(255,255,255,.75);
+     color:white;
+     text-decoration:none;
+     padding:16px 24px;
+     font-size:12px;
+     letter-spacing:.12em;
+     font-weight:800;
+     text-transform:uppercase;
+     transition:.25s ease;
+     white-space:nowrap;
+     background:transparent;
+     cursor:pointer;
+   }
+
+
+   .btn:hover{transform:translateY(-2px)}
+   
+.nav .btn.open-tally{
+  border:1px solid rgba(0,0,0,.35);
+  color:black;
+  background:transparent;
+}
+
+   .btn.gold{
+     background:linear-gradient(135deg,#d8b374,#b38245);
+     border-color:transparent;
+     color:white;
+     box-shadow:0 18px 46px rgba(0,0,0,.2);
+   }
+
+
+   .hero-copy{
+     width:min(690px,94%);
+     margin-top:182px;
+     position:relative;
+     z-index:3;
+   }
+
+
+   .hero h1{
+     font-size:76px;
+     line-height:.95;
+     margin:0 0 26px;
+     color:#fff;
+   }
+
+
+   .rule{width:72px;height:2px;background:var(--gold);margin:0 0 28px}
+
+
+   .hero p{
+     font-size:20px;
+     line-height:1.58;
+     max-width:590px;
+     margin:0 0 30px;
+     color:rgba(255,255,255,.92);
+   }
+
+
+   .trust{
+     display:flex;
+     flex-wrap:wrap;
+     gap:12px 18px;
+     margin-top:30px;
+     font-size:12px;
+     letter-spacing:.14em;
+     text-transform:uppercase;
+     font-weight:800;
+     color:rgba(255,255,255,.9);
+   }
+
+
+   .section{padding:92px 7vw}
+   .center{text-align:center}
+   .section h2{
+     font-size:48px;
+     line-height:1.08;
+     margin:0;
+   }
+   .section .lead{
+     max-width:760px;
+     margin:24px auto 0;
+     font-size:18px;
+     line-height:1.7;
+     color:#555b53;
+   }
+
+
+   .pain{background:var(--cream)}
+   .pain-grid{
+     display:grid;
+     grid-template-columns:repeat(3,1fr);
+     gap:18px;
+     max-width:1180px;
+     margin:54px auto 0;
+   }
+   .pain-card{
+     background:rgba(255,255,255,.55);
+     border:1px solid var(--line);
+     padding:34px 30px;
+     min-height:210px;
+     border-radius:26px;
+     box-shadow:0 18px 60px rgba(30,25,15,.04);
+   }
+   .pain-card .icon{font-size:28px;color:var(--gold);margin-bottom:18px;text-align:center;width:100%;display:block}
+   .pain-card h3{
+     font-family:Georgia,serif;
+     font-size:25px;
+     font-weight:400;
+     letter-spacing:-.03em;
+     margin:0 0 12px;
+   }
+   .pain-card p{font-size:15px;line-height:1.62;color:#555b53;margin:0}
+
+
+   .map{background:#f5ede3}
+   .transform-grid{
+     max-width:1060px;
+     margin:54px auto 0;
+     display:grid;
+     gap:14px;
+   }
+   .transform-row{
+     display:grid;
+     grid-template-columns:1fr 80px 1fr;
+     align-items:center;
+     gap:18px;
+     padding:18px;
+     background:rgba(255,255,255,.45);
+     border:1px solid var(--line);
+     border-radius:22px;
+   }
+   .from,.to{
+     padding:20px 24px;
+     border-radius:18px;
+     background:#fffaf4;
+     font-size:16px;
+     line-height:1.45;
+   }
+   .from span,.to span{
+     display:block;
+     font-size:11px;
+     letter-spacing:.16em;
+     text-transform:uppercase;
+     font-weight:800;
+     color:var(--gold);
+     margin-bottom:8px;
+   }
+   .arrow{text-align:center;color:var(--gold);font-size:25px}
+
+
+
+   .method{
+     position:relative;
+     overflow:hidden;
+     isolation:isolate;
+     color:var(--text);
+     min-height:790px;
+     padding:86px 0 82px;
+     background:
+       radial-gradient(ellipse at 50% 17%, rgba(255,255,255,.94) 0%, rgba(255,248,244,.82) 27%, rgba(255,232,224,.42) 55%, transparent 78%),
+       radial-gradient(ellipse at 88% 52%, rgba(239,133,120,.43) 0%, rgba(239,133,120,.25) 34%, rgba(239,133,120,.08) 62%, transparent 82%),
+       radial-gradient(ellipse at 12% 78%, rgba(248,167,146,.34) 0%, rgba(248,167,146,.14) 46%, transparent 72%),
+       linear-gradient(112deg,#fff8f2 0%,#ffece4 38%,#ffd0c4 70%,#f2a897 100%);
+   }
+   .method:before{
+     content:"";
+     position:absolute;
+     inset:0;
+     z-index:0;
+     pointer-events:none;
+     background:
+       radial-gradient(circle at 50% 34%, rgba(255,255,255,.62), transparent 34%),
+       linear-gradient(90deg,rgba(255,255,255,.36) 0%,rgba(255,255,255,.22) 31%,rgba(255,255,255,.03) 100%);
+   }
+   .method:after{
+     content:"";
+     position:absolute;
+     z-index:1;
+     left:-70px;
+     top:-42px;
+     width:380px;
+     height:390px;
+     opacity:.20;
+     filter:blur(10px);
+     background:
+       radial-gradient(ellipse at 13% 8%, rgba(120,82,54,.34) 0 7%, transparent 8%),
+       radial-gradient(ellipse at 25% 16%, rgba(120,82,54,.31) 0 7%, transparent 8%),
+       radial-gradient(ellipse at 34% 26%, rgba(120,82,54,.28) 0 7%, transparent 8%),
+       radial-gradient(ellipse at 40% 38%, rgba(120,82,54,.24) 0 7%, transparent 8%),
+       radial-gradient(ellipse at 43% 51%, rgba(120,82,54,.20) 0 7%, transparent 8%),
+       radial-gradient(ellipse at 41% 64%, rgba(120,82,54,.16) 0 7%, transparent 8%),
+       conic-gradient(from 190deg at 6% 3%, transparent 0 23deg, rgba(120,82,54,.34) 24deg 26deg, transparent 27deg 360deg),
+       conic-gradient(from 188deg at 17% 10%, transparent 0 23deg, rgba(120,82,54,.31) 24deg 26deg, transparent 27deg 360deg),
+       conic-gradient(from 186deg at 27% 20%, transparent 0 23deg, rgba(120,82,54,.27) 24deg 26deg, transparent 27deg 360deg),
+       conic-gradient(from 184deg at 34% 32%, transparent 0 23deg, rgba(120,82,54,.23) 24deg 26deg, transparent 27deg 360deg),
+       conic-gradient(from 182deg at 38% 45%, transparent 0 23deg, rgba(120,82,54,.18) 24deg 26deg, transparent 27deg 360deg);
+     transform:rotate(-14deg);
+     pointer-events:none;
+   }
+   .method > *{position:relative;z-index:3}
+   .method-orbit{
+     position:absolute;
+     z-index:1;
+     pointer-events:none;
+     border:1px solid rgba(194,148,88,.22);
+     border-radius:50%;
+   }
+   .method-orbit.one{
+     width:470px;
+     height:470px;
+     right:-220px;
+     top:150px;
+     border-left-color:transparent;
+     border-bottom-color:transparent;
+     transform:rotate(-18deg);
+     opacity:.62;
+   }
+   .method-orbit.two{
+     width:590px;
+     height:590px;
+     right:-230px;
+     bottom:-390px;
+     border-top-color:transparent;
+     border-left-color:transparent;
+     transform:rotate(8deg);
+     opacity:.68;
+   }
+   .method .eyebrow{
+     color:#a96d29;
+     margin:0 0 20px;
+     font-size:12px;
+     line-height:1;
+     letter-spacing:.26em;
+     font-weight:800;
+   }
+   .method .eyebrow:after{
+     content:"✦";
+     display:block;
+     width:220px;
+     height:18px;
+     margin:22px auto 0;
+     color:#b77f35;
+     font-size:12px;
+     line-height:19px;
+     text-align:center;
+     background:linear-gradient(90deg,transparent 0%,rgba(190,145,83,.40) 38%,transparent 38% 62%,rgba(190,145,83,.40) 62%,transparent 100%);
+     background-size:100% 1px;
+     background-repeat:no-repeat;
+     background-position:center 9px;
+   }
+   .method h2{
+     color:#14231d;
+     font-size:48px;
+     line-height:1.02;
+     letter-spacing:-.055em;
+     margin:0;
+     font-weight:400;
+     text-shadow:0 18px 42px rgba(255,255,255,.72);
+   }
+   .method .lead{
+     color:#2f3b38;
+     max-width:620px;
+     font-size:19px;
+     line-height:1.55;
+     margin:24px auto 0;
+     font-weight:400;
+   }
+   .method-grid{
+     display:grid;
+     grid-template-columns:repeat(3,minmax(0,1fr));
+     gap:28px;
+     width:min(1240px,84vw);
+     max-width:none;
+     margin:68px auto 0;
+   }
+   .method-card{
+     position:relative;
+     min-height:405px;
+     padding:48px 36px 44px;
+     border:1px solid rgba(213,144,126,.31);
+     border-radius:22px;
+     background:linear-gradient(180deg,rgba(255,251,247,.58),rgba(255,241,235,.46));
+     box-shadow:
+       0 50px 105px rgba(181,93,74,.09),
+       0 18px 48px rgba(255,255,255,.36) inset,
+       inset 0 1px 0 rgba(255,255,255,.70),
+       inset 0 -1px 0 rgba(214,142,123,.04);
+     backdrop-filter:blur(10px);
+   }
+   .method-card:before{
+     content:"";
+     position:absolute;
+     top:144px;
+     left:50%;
+     transform:translateX(-50%);
+     width:78px;
+     height:1px;
+     background:linear-gradient(90deg,transparent,rgba(190,145,83,.50),transparent);
+   }
+   .method-card:after{
+     content:"✦";
+     position:absolute;
+     top:136px;
+     left:50%;
+     transform:translateX(-50%);
+     color:#bd8b45;
+     font-size:12px;
+     line-height:1;
+   }
+   .method-mark{
+     width:88px;
+     height:88px;
+     position:relative;
+     top:auto;
+     left:auto;
+     transform:none;
+     margin:0 auto 64px;
+     border-radius:50%;
+     background:rgba(244,202,191,.32);
+     border:0;
+     box-shadow:
+       0 28px 54px rgba(180,98,78,.08),
+       inset 0 1px 0 rgba(255,255,255,.55);
+     display:flex;
+     align-items:center;
+     justify-content:center;
+   }
+   .method-mark svg{
+     width:52px;
+     height:52px;
+     stroke:#b87930;
+     fill:none;
+     stroke-width:1.35;
+     stroke-linecap:round;
+     stroke-linejoin:round;
+     opacity:.94;
+   }
+   .method-card h3{
+     font-family:Georgia,serif;
+     font-size:36px;
+     line-height:1;
+     font-weight:400;
+     letter-spacing:-.052em;
+     margin:0 0 22px;
+     color:#14231d;
+   }
+   .method-card b{
+     display:block;
+     margin:0 0 22px;
+     color:#c8525b;
+     font-size:11px;
+     line-height:1.35;
+     letter-spacing:.20em;
+     text-transform:uppercase;
+     font-weight:800;
+   }
+   .method-card p{
+     max-width:330px;
+     margin:0 auto;
+     color:#263431;
+     font-size:15.5px;
+     line-height:1.62;
+     font-weight:400;
+   }
+
+
+   .about{background:var(--cream)}
+   .about-wrap{
+     max-width:1180px;
+     margin:0 auto;
+     display:flex;
+     gap:70px;
+     align-items:center;
+   }
+   .about-photo{
+     flex:0 0 44%;
+     height:620px;
+     min-height:unset;
+     border-radius:34px;
+     background:var(--about-url) center 12%/cover no-repeat;
+     box-shadow:0 28px 90px rgba(25,20,10,.12);
+   }
+   .about-text{flex:1;}
+   .about-text p{
+     font-size:17px;
+     line-height:1.75;
+     color:#4e554d;
+     margin:0 0 18px;
+   }
+   .about-text strong{color:var(--text)}
+
+
+   .work{background:#f4eadf}
+   .work-grid{
+     display:grid;
+     grid-template-columns:repeat(3,1fr);
+     gap:20px;
+     max-width:1180px;
+     margin:54px auto 0;
+   }
+   .work-card{
+     background:#fffaf4;
+     border:1px solid var(--line);
+     border-radius:28px;
+     padding:38px 34px;
+     min-height:300px;
+   }
+   .work-card h3{
+     font-family:Georgia,serif;
+     font-size:30px;
+     font-weight:400;
+     letter-spacing:-.035em;
+     margin:0 0 16px;
+   }
+   .work-card p{font-size:15.5px;line-height:1.68;color:#545a52;margin:0}
+
+
+   .circle{background:var(--cream)}
+   .circle-wrap{
+     max-width:1120px;
+     margin:0 auto;
+     display:grid;
+     grid-template-columns:1.05fr .95fr;
+     gap:58px;
+     align-items:center;
+   }
+   .circle-box{
+     background:#fffaf4;
+     border:1px solid var(--line);
+     border-radius:34px;
+     padding:42px;
+   }
+   .circle-box p{font-size:17px;line-height:1.75;color:#50564f;margin:0 0 18px}
+   .circle-points{display:grid;gap:18px}
+   .circle-point{
+     padding:28px;
+     border-radius:24px;
+     background:#f3eadf;
+     border:1px solid var(--line);
+   }
+   .circle-point h3{margin:0 0 8px;font-family:Georgia,serif;font-size:26px;font-weight:400}
+   .circle-point p{margin:0;color:#565c54;line-height:1.58;font-size:15px}
+
+
+   .fit{background:#f6efe6}
+   .fit-grid{
+     display:grid;
+     grid-template-columns:1fr 1fr;
+     gap:26px;
+     max-width:1120px;
+     margin:54px auto 0;
+   }
+   .fit-card{
+     background:#fffaf4;
+     border:1px solid var(--line);
+     border-radius:30px;
+     padding:42px 38px;
+   }
+   .fit-card h3{font-family:Georgia,serif;font-size:32px;font-weight:400;margin:0 0 24px;letter-spacing:-.035em}
+   .fit-card ul{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+   .fit-card li{font-size:15.5px;line-height:1.55;color:#4f554e;padding-left:24px;position:relative}
+   .fit-card li:before{content:"•";position:absolute;left:0;color:var(--gold);font-size:22px;line-height:1}
+   .fit-close{margin-top:44px;text-align:center;font-family:Georgia,serif;font-size:28px;color:var(--text)}
+
+
+   .trust-section{background:var(--cream)}
+   .trust-grid{
+     display:grid;
+     grid-template-columns:repeat(3,1fr);
+     gap:18px;
+     max-width:980px;
+     margin:52px auto 0;
+   }
+   .trust-card{
+     background:#fffaf4;
+     border:1px solid var(--line);
+     border-radius:26px;
+     padding:30px 26px;
+   }
+   .trust-card h3{font-family:Georgia,serif;font-size:25px;font-weight:400;margin:0 0 12px}
+   .trust-card p{font-size:14.5px;line-height:1.58;color:#596057;margin:0}
+
+
+   .final{
+     min-height:430px;
+     background:
+       linear-gradient(90deg,rgba(12,18,15,.9),rgba(12,18,15,.54),rgba(12,18,15,.18)),
+       var(--footer) center bottom/cover no-repeat;
+     color:white;
+     display:flex;
+     align-items:center;
+     padding:70px 7vw;
+   }
+   .final div{max-width:650px}
+   .final h2{font-size:50px;line-height:1.05;margin:0 0 18px;color:white}
+   .final p{font-size:18px;line-height:1.65;color:rgba(255,255,255,.86);margin:0 0 28px}
+
+
+   .footer{
+     background:#000000;
+     color:white;
+     display:flex;
+     justify-content:space-between;
+     align-items:center;
+     gap:24px;
+     padding:28px 6vw;
+     font-size:12px;
+     letter-spacing:.12em;
+     text-transform:uppercase;
+     font-weight:700;
+   }
+   .footer .brand{font-size:30px}
+
+
+   .modal{
+     position:fixed;
+     inset:0;
+     z-index:999999;
+     display:none;
+     align-items:center;
+     justify-content:center;
+     padding:24px;
+     background:rgba(12,18,15,.72);
+     backdrop-filter:blur(10px);
+   }
+   .modal.open{display:flex}
+   .modal-card{
+     width:min(920px,96vw);
+     height:min(780px,88vh);
+     background:#fffaf4;
+     border-radius:30px;
+     overflow:hidden;
+     position:relative;
+     box-shadow:0 35px 120px rgba(0,0,0,.35);
+   }
+   .modal-head{
+     height:62px;
+     display:flex;
+     align-items:center;
+     justify-content:space-between;
+     padding:0 22px 0 26px;
+     border-bottom:1px solid var(--line);
+     color:var(--text);
+     font-size:12px;
+     letter-spacing:.14em;
+     text-transform:uppercase;
+     font-weight:800;
+   }
+   .close{
+     border:0;
+     background:transparent;
+     font-size:26px;
+     line-height:1;
+     cursor:pointer;
+     color:var(--text);
+   }
+   .modal iframe{width:100%;height:calc(100% - 62px);border:0;background:#fff}
+
+
+   .burger{display:none;background:transparent;border:1px solid rgba(0, 0, 0, 0.55);color:rgb(0, 0, 0);border-radius:999px;padding:11px 14px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:800}
+   .mobile-menu{display:none}
+
+
+   @media(max-width:1050px){
+     .links{gap:18px}
+     .hero h1{font-size:62px}
+     .method-grid,.work-grid{grid-template-columns:1fr}
+     .trust-grid{grid-template-columns:repeat(2,1fr)}
+   }
+
+
+   @media(max-width:900px){
+     #ayfer-site{top:-40px!important}
+     .hero{
+       min-height:760px;
+       padding:56px 28px 64px;
+       background-image:
+         linear-gradient(180deg,rgba(8,17,16,.38),rgba(8,17,16,.82)),
+         var(--hero-url);
+       background-repeat:no-repeat,no-repeat;
+       background-size:cover,cover;
+       background-position:center center,50% 100%;
+     }
+
+
+     .links{display:none}
+     .burger{display:inline-flex}
+     .mobile-menu{
+       position:absolute;
+       top:86px;
+       left:28px;
+       right:28px;
+       background:rgba(0, 0, 0, 0.96);
+       border:1px solid rgba(255,255,255,.14);
+       border-radius:24px;
+       padding:18px;
+       display:none;
+       z-index:10;
+     }
+     .mobile-menu.open{display:grid;gap:14px}
+     .mobile-menu a,.mobile-menu button{
+       color:rgb(255, 255, 255);
+       text-decoration:none;
+       text-align:left;
+       background:transparent;
+       border:0;
+       font-size:13px;
+       letter-spacing:.13em;
+       text-transform:uppercase;
+       font-weight:800;
+       padding:10px;
+     }
+
+
+     .brand{font-size:31px}
+     .nav{padding:18px 28px 16px;align-items:center}
+     .hero-copy{margin-top:305px;width:100%}
+     .hero h1{font-size:45px}
+     .hero p{font-size:17px}
+     .section{padding:68px 26px}
+     .section h2{font-size:36px}
+     .pain-grid{grid-template-columns:1fr}
+     .transform-row{grid-template-columns:1fr;gap:10px}
+     .arrow{transform:rotate(90deg)}
+     .about-wrap{
+       display:flex!important;
+       flex-direction:column!important;
+       gap:34px!important;
+       align-items:stretch!important;
+       max-width:100%!important;
+       width:100%!important;
+     }
+     .about-photo{
+       flex:none!important;
+       width:100%!important;
+       height:520px!important;
+       min-height:0!important;
+       border-radius:28px!important;
+       background-position:center 12%!important;
+     }
+     .about-text{
+       flex:none!important;
+       width:100%!important;
+     }
+     .about-text h2{
+       font-size:36px!important;
+       line-height:1.08!important;
+     }
+     .about-text p{
+       font-size:16px!important;
+       line-height:1.68!important;
+     }
+     .circle-wrap,.fit-grid{grid-template-columns:1fr}
+     .circle-points{display:flex!important;grid-template-columns:none!important;overflow-x:auto!important;gap:16px!important;width:100%;max-width:100%!important;margin-left:auto!important;margin-right:auto!important;padding-bottom:8px!important;scroll-snap-type:x mandatory!important;-webkit-overflow-scrolling:touch!important}
+     .circle-point{min-width:82%!important;scroll-snap-align:center!important}
+     .trust-grid{grid-template-columns:1fr}
+
+     .method{padding:78px 26px 78px!important;min-height:auto!important}
+     .method h2{font-size:36px!important}
+     .method .lead{font-size:18px!important;line-height:1.55!important}
+     .method-grid{grid-template-columns:1fr!important;gap:34px!important;margin-top:58px!important;max-width:560px!important;width:100%!important}
+     .method-card{min-height:auto!important;padding:44px 28px 44px!important}
+     .method-mark{width:92px!important;height:92px!important;margin-bottom:66px!important}
+     .method-card:before{top:143px!important}
+     .method-card:after{top:134px!important}
+     .footer{flex-direction:column;text-align:center}
+   }
+
+
+   @media(max-width:520px){
+     .hero{min-height:740px}
+     .hero h1{font-size:39px}
+     .hero-copy{margin-top:275px}
+     .btn{width:100%;padding:16px 18px}
+     .trust{font-size:11px;gap:10px}
+     .about-photo{
+       height:420px!important;
+       border-radius:24px!important;
+       background-position:center 10%!important;
+     }
+     .about-text h2{
+       font-size:34px!important;
+       line-height:1.08!important;
+     }
+     .about-text p{
+       font-size:15.5px!important;
+       line-height:1.66!important;
+       margin-bottom:16px!important;
+     }
+     .final h2{font-size:36px}
+     .modal{padding:12px}
+     .modal-card{height:90vh;border-radius:22px}
+
+     .method{padding:70px 18px 70px!important}
+     .method h2{font-size:36px!important}
+     .method .eyebrow{font-size:11px!important}
+     .method .lead{font-size:16px!important}
+     .method-card h3{font-size:38px!important}
+     .method-card p{font-size:15.5px!important}
+     .method-card b{font-size:11px!important}
+   }
+ </style>
+
+
+ <div class="hero" id="top">
+   <header class="nav">
+     <div class="brand">AYFER<span>RECONNECT. RELEASE. RISE</span></div>
+
+
+     <nav class="links">
+       <a href="#about">About</a>
+       <a href="#method">The Becoming Method</a>
+       <a href="#work">Work Together</a>
+     
+       <button class="btn open-tally">Book a Discovery Call</button>
+       
+     </nav>
+
+
+     <button class="burger" id="burger">Menu</button>
+
+
+     <div class="mobile-menu" id="mobileMenu">
+       <a href="#about">About</a>
+       <a href="#method">The Becoming Method</a>
+       <a href="#work">Work Together</a>
+       <button class="open-tally">Book a Discovery Call</button>
+     </div>
+   </header>
+
+
+   <div class="hero-copy">
+     <h1 class="serif">Helping you reconnect with yourself and become the woman you’re meant to be.</h1>
+     <div class="rule"></div>
+     <p>For women who feel lost, disconnected or stuck in old patterns, and are ready for a grounded, emotionally aligned transformation.</p>
+     <button class="btn gold open-tally">Book Your Discovery Call</button>
+     <div class="trust">
+       <span>Reconnect</span><span>•</span><span>Release</span><span>•</span><span>Rise</span>
+     </div>
+   </div>
+ </div>
+
+
+ <section class="section pain center">
+   <div class="eyebrow">When something feels off</div>
+   <h2 class="serif">You may look fine on the outside…<br><em>but inside, something feels disconnected.</em></h2>
+
+
+   <div class="pain-grid">
+     <div class="pain-card"><div class="icon">☾</div><h3>You feel emotionally exhausted</h3><p>You’ve been carrying more than you realize and it’s starting to weigh on you.</p></div>
+     <div class="pain-card"><div class="icon">∞</div><h3>You keep repeating old patterns</h3><p>Even when you thought you had already done the work, the same emotional cycles keep returning.</p></div>
+     <div class="pain-card"><div class="icon">≋</div><h3>You overthink your decisions</h3><p>Second-guessing yourself has become exhausting, leaving you stuck between fear and uncertainty.</p></div>
+     <div class="pain-card"><div class="icon">✧</div><h3>You feel disconnected from yourself</h3><p>From your needs, your truth or the version of you that once felt clear and grounded.</p></div>
+     <div class="pain-card"><div class="icon">◌</div><h3>You look capable but feel lost inside</h3><p>From the outside, you appear strong, capable, and composed. Inside, it tells a different story.</p></div>
+     <div class="pain-card"><div class="icon">♡</div><h3>Part of you knows something needs to shift</h3><p>You feel a deep calling toward something greater… you just don’t know how to get there.</p></div>
+   </div>
+ </section>
+
+
+
+
+
+ <section class="section method center" id="method">
+   <span class="method-orbit one" aria-hidden="true"></span>
+   <span class="method-orbit two" aria-hidden="true"></span>
+
+   <div class="eyebrow">Ayfer’s signature approach</div>
+   <h2 class="serif">The Becoming Method</h2>
+   <p class="lead">A gentle but powerful transformation designed to<br>help you reconnect, release, and rise.</p>
+
+
+   <div class="method-grid">
+     <div class="method-card">
+       <div class="method-mark" aria-hidden="true">
+         <svg viewBox="0 0 64 64">
+           <path d="M20 48c9-18 20-27 31-33"/>
+           <path d="M28 37c-6-2-10-6-12-12 8 0 13 4 16 10"/>
+           <path d="M36 29c-6-2-9-6-10-12 7 0 11 4 13 9"/>
+           <path d="M43 22c-4-3-5-7-4-12 6 2 8 6 7 11"/>
+           <path d="M32 39c5-1 10 0 15 4-6 4-12 4-17-1"/>
+           <path d="M39 31c5-1 9 0 13 3-5 4-10 4-14 0"/>
+         </svg>
+       </div>
+       <h3>Reconnect</h3>
+       <b>Reconnect with yourself.</b>
+       <p>Your body. Your emotions. Your truth.<br>A safe return inward before<br>transformation begins.</p>
+     </div>
+     <div class="method-card">
+       <div class="method-mark" aria-hidden="true">
+         <svg viewBox="0 0 64 64">
+           <path d="M15 41h34"/>
+           <path d="M20 37a12 12 0 0 1 24 0"/>
+           <path d="M32 11v12"/>
+           <path d="M20 18l8 8"/>
+           <path d="M44 18l-8 8"/>
+           <path d="M11 33h8"/>
+           <path d="M45 33h8"/>
+           <path d="M18 48h28"/>
+         </svg>
+       </div>
+       <h3>Release</h3>
+       <b>Release what no longer serves you.</b>
+       <p>Old patterns, limiting beliefs,<br>and stories that kept you small.<br>Transformation begins when you<br>choose to let go.</p>
+     </div>
+     <div class="method-card">
+       <div class="method-mark" aria-hidden="true">
+         <svg viewBox="0 0 64 64">
+           <path d="M39 14c-8 3-13 11-12 20 1 10 9 17 19 18-5 4-12 6-19 4-12-3-19-15-16-27 3-12 15-19 28-15z"/>
+           <path d="M48 18l1.6 4.2 4.2 1.6-4.2 1.6L48 30l-1.6-4.6-4.2-1.6 4.2-1.6z"/>
+         </svg>
+       </div>
+       <h3>Rise</h3>
+       <b>Rise into the woman you’re becoming.</b>
+       <p>With grounded confidence, self-trust,<br>emotional clarity, and a deeper alignment<br>with the life that feels true for you.<br>This is where transformation<br>becomes embodiment.</p>
+     </div>
+   </div>
+ </section>
+
+
+ <section class="section map center">
+   <div class="eyebrow">The transformation</div>
+   <h2 class="serif">From where you are…<br><em>to the woman you’re becoming.</em></h2>
+
+
+   <div class="transform-grid">
+     <div class="transform-row"><div class="from"><span>From</span>Emotionally overwhelmed</div><div class="arrow">→</div><div class="to"><span>To</span>Emotionally grounded</div></div>
+     <div class="transform-row"><div class="from"><span>From</span>Stuck in repeating patterns</div><div class="arrow">→</div><div class="to"><span>To</span>Free to choose differently</div></div>
+     <div class="transform-row"><div class="from"><span>From</span>Disconnected from yourself</div><div class="arrow">→</div><div class="to"><span>To</span>Deeply connected to your truth</div></div>
+     <div class="transform-row"><div class="from"><span>From</span>Overthinking and second-guessing</div><div class="arrow">→</div><div class="to"><span>To</span>Clear, self-trusting decisions</div></div>
+     <div class="transform-row"><div class="from"><span>From</span>Living from fear or old conditioning</div><div class="arrow">→</div><div class="to"><span>To</span>Living from alignment and inner confidence</div></div>
+     <div class="transform-row"><div class="from"><span>From</span>Feeling lost between who you were and who you’re becoming</div><div class="arrow">→</div><div class="to"><span>To</span>Fully stepping into the woman you’re becoming</div></div>
+   </div>
+ </section>
+
+ <section class="section about" id="about">
+   <div class="about-wrap">
+     <div class="about-photo"></div>
+     <div class="about-text">
+       <div class="eyebrow">About Ayfer</div>
+       <h2 class="serif">I know what it feels like to lose yourself.</h2>
+</br>
+
+       <p>For years, I searched for love, certainty, belonging and answers outside of myself.</p>
+       <p>From the outside, I often looked strong. But inside, I was carrying heartbreak, emotional pain, uncertainty and patterns I didn’t yet know how to break.</p>
+       <p>I know what it feels like to feel disconnected from yourself while still trying to hold everything together.</p>
+       <p>And I know the silent exhaustion that comes from wanting something to change, but not knowing how to make it happen.</p>
+       <p>My deepest transformation began when life brought me to a turning point that forced me inward.</p>
+       <p><strong>I didn’t plan to become a Spiritual Life Coach. Life led me here.</strong></p>
+       <p>Through years of emotional healing, inner work, yoga, embodiment and deep self-reconnection, I began releasing what no longer served me and rebuilding my relationship with myself from the inside out.</p>
+       <p>What emerged was not a new version of me.</p>
+       <p>It was a more grounded, clear, self-trusting, and fully aligned version of who I had always been becoming.</p>
+       <p><strong>Today, that lived experience is at the heart of how I guide other women.</strong></p>
+       <p>Through <strong>The Becoming Method</strong>, I guide women through their own transformation with compassion and grounded support… helping them reconnect with themselves, release old patterns, and rise into the woman they’re becoming.</p>
+     </div>
+   </div>
+ </section>
+
+
+ <section class="section work center" id="work">
+   <div class="eyebrow">How we work together</div>
+   <h2 class="serif">Healing happens in safe connection, not isolation.</h2>
+   <p class="lead">Every journey begins with a Discovery Call, where we explore where you are, what you’re moving through and whether working together feels aligned.</p>
+
+
+   <div class="work-grid">
+     <div class="work-card"><h3>Private 1:1 Coaching</h3><p>Personalized support designed around your unique journey.</br> A private space to explore emotional patterns, reconnect with yourself, strengthen self-trust, and create meaningful transformation from the inside out.</p></div>
+     <div class="work-card"><h3>Soul Sister Circle</h3><p>Healing begins when you step into a space where you feel safe enough to be seen, heard, and held by women who are on their own journey of becoming.</br>These spaces are designed for reflection, connection, emotional release, and meaningful transformation in community.
+</p></div>
+     <div class="work-card"><h3>Yoga & Embodiment</h3><p>Through movement, breath, and embodied practices, yoga becomes more than physical movement—it becomes a return to yourself. A grounding space to regulate your nervous system, release stored tension, deepen self-awareness, and reconnect with the wisdom of your body.</p></div>
+   </div>
+
+
+   <p class="lead" style="margin-top:46px;font-family:Georgia,serif;font-size:26px;color:var(--text)">Every transformation begins with one honest conversation.</p>
+   <button class="btn gold open-tally" style="margin-top:22px">Book Your Discovery Call</button>
+ </section>
+
+
+ <section class="section fit center">
+   <div class="eyebrow">Readiness</div>
+   <h2 class="serif">This work is for you <br><em>and it’s not for everyone.</em></h2>
+
+
+   <div class="fit-grid">
+     <div class="fit-card">
+       <h3>This work is for you if…</h3>
+       <ul>
+         <li>You feel disconnected from yourself and long to come back home to who you truly are.</li>
+         <li>You keep repeating emotional or relationship patterns you’re finally ready to understand and break.</li>
+
+         <li>You’re exhausted by overthinking, self-doubt, or carrying emotional weight on your own.</li>
+         <li>You crave deeper clarity, inner alignment, and a more grounded relationship with yourself.</li>
+         <li>You’re ready for meaningful transformation through honest inner work, not temporary inspiration.</li>
+       </ul>
+     </div>
+
+
+     <div class="fit-card">
+       <h3>This may not be for you if…</h3>
+       <ul>
+         <li>You’re looking for quick fixes rather than the deeper work real transformation requires.</li>
+         <li>You want someone to tell you what to do instead of helping you find your own answers.</li>
+         <li>You’re not ready to honestly face the emotional patterns that continue keeping you stuck.</li>
+         <li>You’re seeking surface motivation rather than deeper healing, growth, and meaningful change.</li>
+         <li>You’re unwilling to make the space honest transformation asks of your time and energy.</li>
+       </ul>
+     </div>
+   </div>
+
+
+
+
+
+
+
+
+   <div class="fit-close">Transformation begins when you’re ready to meet yourself honestly.</div>
+ </section>
+
+
+ <section class="section trust-section center">
+   <div class="eyebrow">Why this work</div>
+   <h2 class="serif">This work is rooted in lived experience,<br><em>practice, and deep transformation.</em></h2>
+   <p class="lead">Transformation isn’t created through advice alone. It happens in spaces where you feel safe enough to be honest, supported enough to soften, and grounded enough to truly change.</p>
+
+
+   <div class="trust-grid">
+     <div class="trust-card"><h3>Women’s Circles</h3><p>Creating safe, transformative spaces for women to connect, reflect, and grow in community.</p></div>
+     <div class="trust-card"><h3>Yoga & Embodiment</h3><p>Through movement, breath, and embodied practices, yoga becomes a grounding pathway back to presence, emotional regulation, and deeper connection with yourself.</p></div>
+     <div class="trust-card"><h3>The Becoming Method</h3><p>Ayfer’s signature framework for helping women reconnect with themselves, release old patterns, and rise into aligned transformation.</p></div>
+   </div>
+ </section>
+
+
+ <section class="final">
+   <div>
+     <h2 class="serif">The woman you’re becoming is already within you.</h2>
+     <p>If you’re ready to reconnect with yourself, release what no longer serves you, and step into a more grounded, clear and aligned version of your life, this may be your next step.</p>
+     <p>Every journey begins with a single honest conversation.</p>
+     <button class="btn gold open-tally">Book Your Discovery Call</button>
+   </div>
+ </section>
+
+
+ <footer class="footer">
+   <div class="brand">AYFER</div>
+   <div>Reconnect. Release. Rise.</div>
+   <div>The Becoming Method</div>
+   <div>San Francisco</div>
+ </footer>
+ <script>
+   const burger = document.getElementById('burger');
+   const mobileMenu = document.getElementById('mobileMenu');
+
+   document.querySelectorAll('.open-tally').forEach(btn=>{
+     btn.addEventListener('click',()=>{
+       window.open('https://calendly.com/ayfer/60min','_blank','noopener,noreferrer');
+     });
+   });
+
+   burger.addEventListener('click',()=>{
+     mobileMenu.classList.toggle('open');
+   });
+
+   document.querySelectorAll('#ayfer-site a[href^="#"]').forEach(link=>{
+     link.addEventListener('click',function(e){
+       const target=document.querySelector(this.getAttribute('href'));
+       if(target){
+         e.preventDefault();
+         mobileMenu.classList.remove('open');
+         target.scrollIntoView({behavior:'smooth',block:'start'});
+       }
+     });
+   });
+ </script>
+</section>
